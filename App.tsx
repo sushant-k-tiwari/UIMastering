@@ -1,13 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import FoodLogo from "./assets/FoodLogo";
 import "./global.css";
+import IntroScreen from "./screens/IntroScreen";
+import ContactUsScreen from "./screens/ContactUsScreen";
 
 export default function App() {
   return (
-    <View className="flex-1 justify-center items-center">
-      <FoodLogo />
+    <View style={styles.container}>
       <StatusBar style="auto" />
+      {/* <IntroScreen /> */}
+      <ContactUsScreen />
     </View>
   );
 }
@@ -16,7 +18,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
