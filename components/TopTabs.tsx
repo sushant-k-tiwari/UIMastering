@@ -11,7 +11,8 @@ const TopTabs = () => {
 
   return (
     <View style={styles.container}>
-      {tabsArr.map((tabName) => {
+      {tabsArr.map((tabName, index) => {
+
         return (
           <TouchableOpacity
             style={[
