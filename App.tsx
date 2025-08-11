@@ -1,22 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import "./global.css";
-import IntroScreen from "./screens/IntroScreen";
-import ContactUsScreen from "./screens/ContactUsScreen";
+import HomeScreen from "./screens/HomeScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      {/* <IntroScreen /> */}
-      <ContactUsScreen />
+      <HomeScreen />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
+  container: {},
 });
